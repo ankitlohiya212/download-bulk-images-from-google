@@ -1,13 +1,10 @@
-from bs4 import BeautifulSoup
-import re
-import requests
 from selenium import webdriver
 from time import sleep
 
-search = "dog"
+search = "your_query"
 num_imgs = 100
 
-driver = webdriver.Chrome('chromedriver_win32/chromedriver')
+driver = webdriver.Chrome('path\to\chromedriver_win32/chromedriver')
 url = "https://www.google.com/search?q={}&source=lnms&tbm=isch&sa=X&ved=2ahUKEwikzYbF1t3qAhVRX30KHRs7CWMQ_AUoAXoECCAQAw&biw=1366&bih=657".format(search)
 driver.get(url)
 
