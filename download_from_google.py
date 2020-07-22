@@ -5,7 +5,7 @@ search = "your_query"
 num_imgs = 100
 
 driver = webdriver.Chrome('path/to/chromedriver_win32/chromedriver')
-url = "https://www.google.com/search?q={}&source=lnms&tbm=isch&sa=X&ved=2ahUKEwikzYbF1t3qAhVRX30KHRs7CWMQ_AUoAXoECCAQAw&biw=1366&bih=657".format(search)
+url = "https://www.google.com/search?q={}&tbm=isch".format(search)
 driver.get(url)
 
 for i in range(1, num_imgs+1):
