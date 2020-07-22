@@ -14,7 +14,7 @@ for i in range(1, num_imgs+1):
         element = driver.find_element_by_xpath(xpath)
 	element.screenshot("path/to/directory/"+search+str(i)+".png")
         sleep(0.1)
-        print(i)
+        print(i+"/"+num_imgs+" done")
     except:
         continue
 
